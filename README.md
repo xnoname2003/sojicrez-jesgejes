@@ -7,7 +7,7 @@ Proyek ini merupakan bagian dari Ujian Tengah Semester (UTS) mata kuliah Analisi
 
 - **Nama Kelompok**    : Sojicrez Jesgejes
 - **Anggota Kelompok** :
-- 1. Zidan Wali Arubusman (4523210001)
+  1. Zidan Wali Arubusman (4523210001)
   2. Revalina Adelia (4523210091)
   3. Soja Purnamasari (4523210104)
   4. Chaerul Cahyadi (4523210120)
