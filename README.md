@@ -6,11 +6,12 @@ Proyek ini merupakan bagian dari Ujian Tengah Semester (UTS) mata kuliah Analisi
 ## 📃 Identitas Diri
 
 - **Nama Kelompok**    : Sojicrez Jesgejes
-- **Anggota Kelompok** : 1. Zidan Wali Arubusman (4523210001)
-                         2. Revalina Adelia (4523210091)
-                         3. Soja Purnamasari (4523210104)
-                         4. Chaerul Cahyadi (4523210120)
-                         5. Avryzel Alifian Hakim (4523210121)
+- **Anggota Kelompok** :
+- 1. Zidan Wali Arubusman (4523210001)
+  2. Revalina Adelia (4523210091)
+  3. Soja Purnamasari (4523210104)
+  4. Chaerul Cahyadi (4523210120)
+  5. Avryzel Alifian Hakim (4523210121)
 - **Mata Kuliah**      : Analisis dan Perancangan Berorientasi Objek (A)
 - **Dosen Pengampu**   : Adi Wahyu Pribadi, S.Si., M.Kom.
 
