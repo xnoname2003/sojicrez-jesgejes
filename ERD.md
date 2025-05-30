@@ -4,27 +4,25 @@
 
 ---
 ## Penjelasan Relasi Antar Tabel
-| Entitas 1         | Entitas 2             | Tipe Relasi       | Penjelasan                                                                 |
-|------------------|------------------------|--------------------|----------------------------------------------------------------------------|
-| Ms_Produk         | Trx_Keranjang          | One-to-Many         | Satu produk bisa dimasukkan berkali-kali ke dalam keranjang oleh pelanggan. |
-| Ms_Produk         | Trx_Ulasan             | One-to-Many         | Satu produk bisa memiliki banyak ulasan dari pelanggan berbeda.           |
-| Ms_Produk         | Trx_Foto_Produk        | One-to-Many         | Satu produk dapat memiliki banyak foto.                                   |
-| Ms_Pelanggan      | Trx_Keranjang          | One-to-Many         | Satu pelanggan dapat memiliki banyak item dalam keranjang.                |
-| Ms_Pelanggan      | Trx_Checkout           | One-to-Many         | Satu pelanggan dapat melakukan banyak transaksi pembelian.                |
-| Ms_Pelanggan      | Trx_Ulasan             | One-to-Many         | Satu pelanggan dapat memberi banyak ulasan produk.                        |
-| Ms_Pelanggan      | Trx_Alamat             | One-to-Many         | Satu pelanggan dapat memiliki banyak alamat pengiriman.                   |
-| Ms_Pelanggan      | Trx_Komplain           | One-to-Many         | Satu pelanggan dapat membuat banyak komplain.                             |
-| Ms_Pelanggan      | Trx_Komplain_Chat      | One-to-Many         | Satu pelanggan dapat mengirim banyak pesan dalam chat komplain.          |
-| Ms_Admin          | Trx_Checkout           | One-to-Many         | Admin dapat memperbarui banyak status pesanan.                            |
-| Ms_Admin          | Trx_Komplain_Chat      | One-to-Many         | Admin dapat membalas banyak pesan dalam komplain chat.                    |
-| Trx_Checkout      | Trx_Keranjang          | One-to-Many         | Satu transaksi checkout memuat banyak item dari keranjang.                |
-| Trx_Checkout      | Trx_Payment            | One-to-One          | Satu transaksi checkout hanya memiliki satu pembayaran.                   |
-| Trx_Checkout      | Trx_Komplain           | One-to-Many         | Satu transaksi bisa memiliki lebih dari satu komplain.                    |
-| Trx_Komplain      | Trx_Komplain_Chat      | One-to-Many         | Satu komplain memuat banyak percakapan antara admin dan pelanggan.        |
-| Ms_Ekspedisi      | Trx_Checkout           | One-to-Many         | Satu layanan ekspedisi bisa digunakan oleh banyak checkout.               |
-| Ms_Payments       | Trx_Payment            | One-to-Many         | Satu metode pembayaran bisa digunakan di banyak transaksi.                |
-|
-
+| No | Entitas 1         | Entitas 2             | Tipe Relasi             | Penjelasan                                                                 |
+|----|-------------------|------------------------|--------------------------|----------------------------------------------------------------------------|
+| 1  | Ms_Produk         | Trx_Keranjang          | One-to-Many              | Satu produk bisa dimasukkan berkali-kali ke dalam keranjang oleh pelanggan. |
+| 2  | Ms_Produk         | Trx_Ulasan             | One-to-Many              | Satu produk bisa memiliki banyak ulasan dari pelanggan berbeda.           |
+| 3  | Ms_Produk         | Trx_Foto_Produk        | One-to-Many              | Satu produk dapat memiliki banyak foto.                                   |
+| 4  | Ms_Pelanggan      | Trx_Keranjang          | One-to-Many              | Satu pelanggan dapat memiliki banyak item dalam keranjang.                |
+| 5  | Ms_Pelanggan      | Trx_Checkout           | One-to-Many              | Satu pelanggan dapat melakukan banyak transaksi pembelian.                |
+| 6  | Ms_Pelanggan      | Trx_Ulasan             | One-to-Many              | Satu pelanggan dapat memberi banyak ulasan produk.                        |
+| 7  | Ms_Pelanggan      | Trx_Alamat             | One-to-Many              | Satu pelanggan dapat memiliki banyak alamat pengiriman.                   |
+| 8  | Ms_Pelanggan      | Trx_Komplain           | One-to-Many              | Satu pelanggan dapat membuat banyak komplain.                             |
+| 9  | Ms_Pelanggan      | Trx_Komplain_Chat      | One-to-Many              | Satu pelanggan dapat mengirim banyak pesan dalam chat komplain.          |
+| 10 | Ms_Admin          | Trx_Checkout           | One-to-Many              | Admin dapat memperbarui banyak status pesanan.                            |
+| 11 | Ms_Admin          | Trx_Komplain_Chat      | One-to-Many              | Admin dapat membalas banyak pesan dalam komplain chat.                    |
+| 12 | Trx_Checkout      | Trx_Keranjang          | One-to-Many              | Satu transaksi checkout memuat banyak item dari keranjang.                |
+| 13 | Trx_Checkout      | Trx_Payment            | One-to-One               | Satu transaksi checkout hanya memiliki satu pembayaran.                   |
+| 14 | Trx_Checkout      | Trx_Komplain           | One-to-Many              | Satu transaksi bisa memiliki lebih dari satu komplain.                    |
+| 15 | Trx_Komplain      | Trx_Komplain_Chat      | One-to-Many              | Satu komplain memuat banyak percakapan antara admin dan pelanggan.        |
+| 16 | Ms_Ekspedisi      | Trx_Checkout           | One-to-Many              | Satu layanan ekspedisi bisa digunakan oleh banyak checkout.               |
+| 17 | Ms_Payments       | Trx_Payment            | One-to-Many              | Satu metode pembayaran bisa digunakan di banyak transaksi.                |
 
 ---
 ## Tabel Master dan Relasi Sistem Penjualan Kripik Isal
