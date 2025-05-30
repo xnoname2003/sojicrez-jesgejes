@@ -1,34 +1,49 @@
 ---
 ## Tabel Relasi Sistem Penjualan Kripik Isal
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/07458e00-f3c1-4aec-a728-248eafd2c0b2" />
-
----
 ---
 ## Penjelasan Relasi Antar Tabel
 ---
 ### 1. Table Produk (```Ms_Produk```)
 - produk - Trx_Keranjang (One-to-Many): Satu produk (Ms_Produk) bisa dimasukkan berkali-kali ke dalam banyak keranjang pesanan oleh pelanggan berbeda.
-- produk - Trx_Ulasan (One-to-Many): Satu produk bisa memiliki banyak ulasan dari pelanggan berbeda.
-- produk - Trx_Foto_Produk (One-to-Many): Satu produk dapat memiliki banyak foto produk.
-- produk - Trx_Komplain (One-to-Many melalui checkout):Produk bisa menjadi bagian dari pesanan yang dikomplain pelanggan (melalui relasi tidak langsung via Trx_Checkout dan Trx_Keranjang).
+- produk - Trx_Ulasan (One-to-Many)
+  Satu produk bisa memiliki banyak ulasan dari pelanggan berbeda.
+- produk - Trx_Foto_Produk (One-to-Many)
+  Satu produk dapat memiliki banyak foto produk.
+- produk - Trx_Komplain (One-to-Many melalui checkout)
+  Produk bisa menjadi bagian dari pesanan yang dikomplain pelanggan (melalui relasi tidak langsung via Trx_Checkout dan Trx_Keranjang).
 ### 2. Table Pelanggan (```Ms_Pelanggan```)
-- pelanggan - Trx_Keranjang (One-to-Many): Satu pelanggan dapat memiliki banyak item di keranjang, baik sebelum maupun sesudah checkout.
-- pelanggan - Trx_Checkout (One-to-Many): Satu pelanggan dapat melakukan banyak transaksi pembelian (checkout).
-- pelanggan - Trx_Ulasan (One-to-Many): Satu pelanggan dapat memberi banyak ulasan produk berbeda.
-- pelanggan - Trx_Alamat (One-to-Many): Satu pelanggan dapat menyimpan banyak alamat pengiriman.
-- pelanggan - Trx_Komplain (One-to-Many): Satu pelanggan dapat membuat banyak komplain terhadap pesanan yang dilakukan.
-- pelanggan - Trx_Komplain_Chat (One-to-Many): Pelanggan dapat mengirim banyak pesan dalam chat komplain.
+- pelanggan - Trx_Keranjang (One-to-Many)
+  Satu pelanggan dapat memiliki banyak item di keranjang, baik sebelum maupun sesudah checkout.
+- pelanggan - Trx_Checkout (One-to-Many)
+  Satu pelanggan dapat melakukan banyak transaksi pembelian (checkout).
+- pelanggan - Trx_Ulasan (One-to-Many)
+  Satu pelanggan dapat memberi banyak ulasan produk berbeda.
+- pelanggan - Trx_Alamat (One-to-Many)
+  Satu pelanggan dapat menyimpan banyak alamat pengiriman.
+- pelanggan - Trx_Komplain (One-to-Many)
+  Satu pelanggan dapat membuat banyak komplain terhadap pesanan yang dilakukan.
+- pelanggan - Trx_Komplain_Chat (One-to-Many)
+  Pelanggan dapat mengirim banyak pesan dalam chat komplain.
 ### 3. Table Admin (```Ms_Admin```)
-- admin - Trx_Checkout (One-to-Many): Admin dapat memperbarui banyak status pesanan ( ```updated_by```).
-- admin - Trx_Komplain_Chat (One-to-Many): Admin dapat memberikan balasan untuk banyak komplain melalui chat.
+- admin - Trx_Checkout (One-to-Many)
+  Admin dapat memperbarui banyak status pesanan ( ```updated_by```).
+- admin - Trx_Komplain_Chat (One-to-Many)
+  Admin dapat memberikan balasan untuk banyak komplain melalui chat.
 ### 4. Table Checkout (```Trx_Checkout```)
-- Trx_Checkout - Trx_Keranjang (One-to-Many): Satu transaksi checkout dapat berisi banyak item pesanan dalam keranjang.
-- Trx_Checkout - Trx_Payment (One-to-One): Satu transaksi checkout hanya memiliki satu pembayaran.
-- Trx_Checkout - Trx_Komplain (One-to-Many): Satu transaksi checkout dapat memiliki satu atau lebih komplain dari pelanggan.
+- Trx_Checkout - Trx_Keranjang (One-to-Many)
+  Satu transaksi checkout dapat berisi banyak item pesanan dalam keranjang.
+- Trx_Checkout - Trx_Payment (One-to-One)
+  Satu transaksi checkout hanya memiliki satu pembayaran.
+- Trx_Checkout - Trx_Komplain (One-to-Many)
+  Satu transaksi checkout dapat memiliki satu atau lebih komplain dari pelanggan.
 ### 5. Table Lainnya
-- Trx_Komplain - Trx_Komplain_Chat (One-to-Many): Satu komplain dapat berisi banyak percakapan antara pelanggan dan admin.
-- Ms_Ekspedisi - Trx_Checkout (One-to-Many): Satu ekspedisi dapat digunakan oleh banyak transaksi pesanan.
-- Ms_Payments - Trx_Payment (One-to-Many): Satu metode pembayaran dapat digunakan dalam banyak transaksi pembayaran.
+- Trx_Komplain - Trx_Komplain_Chat (One-to-Many)
+  Satu komplain dapat berisi banyak percakapan antara pelanggan dan admin.
+- Ms_Ekspedisi - Trx_Checkout (One-to-Many)
+  Satu ekspedisi dapat digunakan oleh banyak transaksi pesanan.
+- Ms_Payments - Trx_Payment (One-to-Many)
+  Satu metode pembayaran dapat digunakan dalam banyak transaksi pembayaran.
 ---
 ## Tabel Master dan Relasi Sistem Penjualan Kripik Isal
 ---
