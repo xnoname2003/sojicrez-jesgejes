@@ -4,9 +4,10 @@
 
 ---
 ## Penjelasan Relasi Antar Tabel
----
+
 ### 1. Table Produk (```Ms_Produk```)
-- produk - Trx_Keranjang (One-to-Many): Satu produk (Ms_Produk) bisa dimasukkan berkali-kali ke dalam banyak keranjang pesanan oleh pelanggan berbeda.
+- produk - Trx_Keranjang (One-to-Many)
+  Satu produk (Ms_Produk) bisa dimasukkan berkali-kali ke dalam banyak keranjang pesanan oleh pelanggan berbeda.
 - produk - Trx_Ulasan (One-to-Many)
   Satu produk bisa memiliki banyak ulasan dari pelanggan berbeda.
 - produk - Trx_Foto_Produk (One-to-Many)
