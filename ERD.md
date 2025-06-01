@@ -13,7 +13,7 @@
 | 1  | Ms_Produk         | Trx_Keranjang          | One-to-Many              | Satu produk (```Ms_Produk```) bisa dimasukkan berkali-kali ke dalam banyak keranjang pesanan oleh pelanggan berbeda. |
 | 2  | Ms_Produk         | Trx_Ulasan             | One-to-Many              | Satu produk bisa memiliki banyak ulasan dari pelanggan berbeda.           |
 | 3  | Ms_Produk         | Trx_Foto_Produk        | One-to-Many              | Satu produk dapat memiliki banyak foto produk.                                   |
-| 4  | Ms_Produk         | Trx_Komplain        | One-to-Many melalui Trx_Checkout             | Produk bisa menjadi bagian dari pesanan yang dikomplain pelanggan (melalui relasi tidak langsung via ```Trx_Checkout``` dan ```Trx_Keranjang```).                                   |
+| 4  | Ms_Produk         | Trx_Komplain        | One-to-Many melalui ```Trx_Checkout```             | Produk bisa menjadi bagian dari pesanan yang dikomplain pelanggan (melalui relasi tidak langsung via ```Trx_Checkout``` dan ```Trx_Keranjang```).                                   |
 | 5  | Ms_Pelanggan      | Trx_Keranjang          | One-to-Many              | Satu pelanggan dapat memiliki banyak item di keranjang, baik sebelum maupun sesudah checkout.                |
 | 6  | Ms_Pelanggan      | Trx_Checkout           | One-to-Many              | Satu pelanggan dapat melakukan banyak transaksi pembelian (checkout).                |
 | 7  | Ms_Pelanggan      | Trx_Ulasan             | One-to-Many              | Satu pelanggan dapat memberi banyak ulasan produk berbeda.                        |
