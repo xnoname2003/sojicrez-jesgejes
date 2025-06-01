@@ -1,10 +1,10 @@
 ---
 ## Entity Relationship Diagram Sistem Penjualan Kripik Isal
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/20d8631b-633c-4a6e-a0ea-307f36b4bbad" />
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/fa8a98be-47a5-4561-8206-e2db64836140" />
 
 ---
 ## Tabel Relasi Sistem Penjualan Kripik Isal
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/07458e00-f3c1-4aec-a728-248eafd2c0b2" />
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/43b5e252-a2ae-4f73-9b6c-6dca9b4b3b5c" />
 
 ---
 ## Penjelasan Relasi Antar Tabel
