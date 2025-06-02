@@ -255,6 +255,7 @@
     discount_amount DECIMAL(10,2) DEFAULT 0,
     total_amount DECIMAL(12,2),
     isPurchaseWithSistem BOOLEAN DEFAULT TRUE,
+    no_resi VARCHAR(100),
     updated_by CHAR(6),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -274,6 +275,7 @@
   | discount_amount     | decimal(10,2)      | Harga diskon (default = 0)                                                               |
   | total_amount        | decimal(12,2)      | Total harga (subtotal - discount_amount)                                                 |
   | isPurchaseWithSistem| boolean            | Validasi pembelian melalui sistem                                                        |
+  | no_resi             | varchar(100)       | Nomor resi pengiriman pesanan                                                        |
   | updated_by          | char(6) (FK)       | Pesanan diupdate oleh admin                                                              |
   | created_at          | timestamp          | Waktu pembuatan pesanan                                                                   |
   | updated_at          | timestamp          | Waktu update pesanan                                                                      |
