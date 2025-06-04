@@ -47,7 +47,7 @@ Proses pengiriman dilakukan melalui use case Proses Pengiriman yang mencakup pen
 Aktor pelanggan merupakan pihak yang melakukan interaksi langsung terhadap sistem untuk kebutuhan pembelian produk. Proses dimulai dengan Registrasi Akun, yang mencakup input data diri seperti nama, email, nomor HP, dan password. Setelah berhasil Login, pelanggan dapat mengakses fitur Pemesanan Produk, yaitu melihat katalog, memilih varian dan ukuran produk, lalu menambahkannya ke keranjang. Tahap ini akan membawa pelanggan ke proses Pembayaran, yang memiliki hubungan langsung ke Bukti Pembayaran (melalui relasi include), dimana pelanggan dapat mengunggah foto bukti transfer jika tidak menggunakan COD. Setelah itu, pelanggan dapat memantau Status Pesanan yang saling terhubung dengan fitur Lacak Pesanan, yang memungkinkan mereka mengetahui apakah pesanan sedang diproses, dikirim, atau telah diterima.
 Setelah produk diterima, pelanggan masuk ke tahap Peneriman Pesanan dan dapat melanjutkan dengan Ulasan dan Rating terhadap produk, mencakup pemberian Bintang (1-5) dan komentar tertulis yang dapat dibaca publik. Proses ini mencerminkan sistem dua arah antara pelanggan dan admin yang mendukung evaluasi dan peningkatan mutu layanan. Pelanggan juga dapat melakukan Logout untuk keluar dari sistem setelah aktivitas selesai.
 
-![Use Case Pelanggan](https://github.com/user-attachments/assets/41ee656c-39e7-4541-b674-df5d61aceb78)
+![Use Case Pelanggan drawio](https://github.com/user-attachments/assets/931b4373-958b-4a56-8de7-819517cbeb06)
 
 ### 3. Use Case Diagram Gabung
 ![Use Case Gabungan](https://github.com/user-attachments/assets/0797c192-57ad-42c8-8c9a-18d8330cca0f)
