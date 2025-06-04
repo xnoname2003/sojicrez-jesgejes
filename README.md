@@ -5,7 +5,7 @@ Proyek ini merupakan bagian dari Ujian Tengah Semester (UTS) mata kuliah Analisi
 
 ## 📃 Identitas Diri
 
-- **Nama Kelompok**    : Sojicrez Jesgejes
+- **Nama Kelompok**    : Sojicrez Jesgejes (Kelompok 5)
 - **Anggota Kelompok** :
   1. Zidan Wali Arubusman (4523210001)
   2. Revalina Adelia (4523210091)
