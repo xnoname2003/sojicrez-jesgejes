@@ -1,7 +1,7 @@
 # Panduan Client Side (Pelanggan)
 ## Pelanggan adalah pengguna utama dalam sistem yang melakukan transaksi pembelian produk Kripik Isal. Adapun tahapan yang dapat dilakukan pelanggan adalah sebagai berikut:
 
-### Register Page
+# Register Page
 ## Wireframe
 ![Register Page](https://github.com/user-attachments/assets/4ab84825-f6db-4249-aa2f-9178cc101d21)
 ## Mockup
