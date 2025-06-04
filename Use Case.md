@@ -7,13 +7,47 @@ Admin bertugas sebagai pengelola utama sistem yang memiliki akses penuh untuk me
 ### 2. Pelanggan
 Pelanggan adalah pengguna akhir sistem yang berperan sebagai konsumen produk. Mereka dapat melakukan resgistrasi, login, mengelola akun pribadi, membuat dan mengelola pesanan, melakukan pembayaran, serta melihat riwayat pesanan dan memberikan ulasan. Pelanggan menjadi pusat dari proses transaksi penjualan dalam sistem ini.
 
+## Functional Requirement
+Adapun functional requirement dari sistem Kripik Isal adalah sebagai berikut:
+1. Sistem menampilkan katalog produk (gambar, varian, rasa, ukuran, harga, dan deskripsi) kepada semua pengunjung, tanpa perlu login.
+2. Pelanggan dapat melakukan registrasi akun dengan mengisi data diri (nama lengkap, email, nomor HP, dan password).
+3. Setelah login, pelanggan dapat mengelola profil (ubah nama, email, foto, dan alamat pengiriman).
+4. Pelanggan dapat menambahkan produk ke keranjang belanja dengan memilih ukuran dan jumlah yang diinginkan.
+5. Sistem secara otomatis menghitung total belanja berdasarkan jumlah dan ukuran produk dalam keranjang.
+6. Pelanggan dapat melakukan checkout dengan memilih ekspedisi dan metode pembayaran.
+7. Tersedia pilihan metode pembayaran:
+   - Transfer Bank (rekening/VA)
+   - COD (Bayar di tempat untuk wilayah tertentu)
+8. Jika memilih transfer, pelanggan dapat mengunggah bukti pembayaran (gambar).
+9. Sistem menyimpan data checkout dan menghasilkan nomor pesanan (order ID) yang unik.
+10. Admin menerima notifikasi untuk setiap pesanan masuk dan pembayaran yang perlu dikonfirmasi.
+11. Admin dapat mengonfirmasi pembayaran, lalu memperbarui status pesanan dari pending → confirmed → processing → shipped → delivered.
+12. Sistem memperbarui stok produk secara otomatis setelah transaksi dikonfirmasi.
+13. Jika stok produk menipis, sistem memberi peringatan kepada admin untuk restock.
+14. Admin dapat menambahkan, mengedit, dan menghapus data produk melalui panel kelola produk.
+15. Admin dapat mengelola data pelanggan: melihat profil, menonaktifkan akun, dan memverifikasi pengguna baru.
+16. Sistem mencatat riwayat transaksi dan status pembayaran pelanggan.
+17. Pelanggan dapat memantau status pesanan melalui halaman “Your Orders.”
+18. Setelah produk diterima, pelanggan dapat memberikan rating (1-5 bintang) dan menulis ulasan.
+19. Admin dapat membahas ulasan pelanggan secara publik untuk menjaga reputasi toko.
+20. Sistem menyediakan fitur komplain: pelanggan dapat membuat laporan keluhan terkait pesanan.
+21. Admin dan pelanggan dapat berkomunikasi melalui chat pada fitur komplain untuk menyelesaikan masalah.
+22. Admin dapat mencetak dan mengunduh laporan keuangan dan transaksi dalam format PDF atau Excel.
+23. Sistem dapat menampilkan statistik penjualan dalam bentuk grafik atau tabel harian, mingguan, bulanan, dan tahunan.
+24. Sistem menyediakan autentikasi login khusus untuk admin dan pelanggan, serta fitur logout dan pengaturan akun.
+
 ## Use Case Diagram
 ### 1. Use Case Diagram Admin
-Use case diagram sistem ini menggambarkan alur aktivitas yang dapat dilakukan oleh aktor utama, yaitu Admin, dalam mengelola sistem penjualan Kripik Isal. Pertama, Admin harus melakukan proses Login untuk mengakses sistem, yang mencakup validasi akun pengguna. Setelah berhasil masuk, Admin akan diarahkan ke Dashboard Penjualan untuk melihat ringkasan aktivitas penjualan, termasuk informasi statistik yang relevan. Admin juga memiliki akses untuk Kelola User, yang terdiri dari pengelolaan data pelanggan dan sesama admin, memastikan bahwa seluruh pengguna sistem dapat dikelola dengan baik. Selain itu, Admin dapat melakukan Kelola Produk, yang meliputi penambahan, pengeditan, hingga penghapusan produk kripik yang tersedia dalam sistem. Selanjutnya, Admin menjalankan fungsi Kelola Penjualan, yang mencakup dua alur utama, yaitu Penjualan dengan Sistem untuk transaksi digital secara langsung, serta Penjualan tanpa Sistem. Untuk distribusi barang, Admin juga bertanggung jawab dalam Kelola Pengiriman, dimana ia dapat mengatur metode pengiriman, input data pengiriman, dan memantau status pengantaran produk ke pelanggan. Apabila terdapat keluhan dari pelanggan, Admin dapat mengakses fitur Kelola Komplain untuk mencatat, menanggapi, dan menyelesaikan setiap aduan secara sistematis. Terakhir, Admin dapat menggunakan fitur Kelola Laporan untuk melihat, mengelola, dan mencetak laporan penjualan serta aktivitas operasional lainnya sebagai bentuk dokumentasi dan evaluasi berkala. Maksud dari kelola penjualan dengan sistem adalah admin dapat melihat daftar pesanan yang masuk, lalu mengonfirmasi pembayaran yang diupload oleh pelanggan. Saat Admin klik tombol konfirmasi pembayaran, otomatis status di Trx_Payment berubah menjadi paid dan status di Trx_Checkout berubah menjadi confirmed. Ketika barang akan disiapkan, Admin mengubah dahulu status pesanan jadi processing, baru barang disiapkan atau dipacking. Kalau sudah dikirim dan Admin sudah menerima resi, Admin akan mengubah status pesanan menjadi shipped dan upload nomor resi dan foto resi di menu kelola pengiriman. Jika barang sudah sampai dan sudah diterima, pelanggan akan meng-klik tombol pesanan telah diterima dan akan otomatis mengubah status pesanan menjadi delivered. Kemudian pelanggan akan diminta menginput rating atau review produk. Sedangkan kelola penjualan tanpa sistem, yaitu pelanggan akan menghubungi Admin melalui WhatsApp atau beli offline. Kemudian transaksinya sudah berhasil, barang sudah diterima, dan uang sudah masuk. Admin login ke sistem untuk input transaksi yang terjadi manual di sistem. Mulai dari memilih produk yang tadi terjual lalu memasukkan keranjang sesuai dengan produk yang dijual.
+     Pada sistem penjualan Kripik Isal, aktor Admin berperan sebagai pusat kendali dari seluruh proses operasional sistem. Admin memulai aktivitas dengan melakukan Login ke dalam sistem, yang membuka akses penuh ke berbagai fitur penting. Admin dapat Mengelola Produk, yaitu menambahkan produk baru, memperbarui deskripsi, varian, harga, dan ukuran kemasan, sesuai dengan data master produk. Melalui use case Data Pesanan yang memiliki dependensi terhadap Data Pelanggan, admin dapat melihat pesanan yang masuk sekaligus mengetahui detail pelanggan terkait, seperti alamat dan kontak. Selanjutnya, admin dapat menjalankan Proses Pesanan, termasuk konfirmasi pembayaran, mengubah status pesanan dari pending menjadi shipped atau delivered, serta menangani pesanan manual dari luar sistem (seperti WhatsApp).
+     Proses pengiriman dilakukan melalui use case Proses Pengiriman yang mencakup pengelolaan layanan ekspedisi (melalui relasi include ke Kelola Ekspedisi), seperti penambahan data ekspedisi, input nomor resi, dan bukti pengiriman. Admin juga bertugas pada use case Kelola Ulasan, yaitu merespons ulasan pelanggan secara publik sebagai bentuk pengelolaan reputasi. Selain itu, admin memantau kinerja bisnis melalui Kelola Hasil Penjualan dengan menghasilkan laporan keuangan dan grafik penjualan dalam format PDF atau Excel. Semua aktivitas ini berakhir dengan Logout untuk keluar dari sistem secara aman.
 
-![Admin Fix](https://github.com/user-attachments/assets/b3d988b3-a9ae-47fb-a2dc-5ed9f4972d6e)
+![Use Case Admin](https://github.com/user-attachments/assets/2f247568-1375-430c-abc9-3ad1d1336859)
 
 ### 2. Use Case Diagram Pelanggan
-Use case sistem penjualan Kripik Isal dari sisi pelanggan mencakup serangkaian aktivitas mulai dari registrasi akun dengan mengisi data dan verifikasi, kemudian login untuk mengakses sistem. Setelah masuk, pelanggan dapat mengelola akun seperti mengubah profil, password, dan alamat. Untuk melakukan pembelian, pelanggan membuat pesanan dengan memilih produk, menentukan jumlah dan ukuran, menambah ke keranjang, lalu mengonfirmasi pesanan. Proses dilanjutkan dengan pembayaran melalui pemilihan metode dan unggah bukti. Pelanggan juga dapat mengelola pesanan dengan melihat status, memberikan ulasan setelah produk diterima, serta meninjau riwayat pesanan.
+     Aktor pelanggan merupakan pihak yang melakukan interaksi langsung terhadap sistem untuk kebutuhan pembelian produk. Proses dimulai dengan Registrasi Akun, yang mencakup input data diri seperti nama, email, nomor HP, dan password. Setelah berhasil Login, pelanggan dapat mengakses fitur Pemesanan Produk, yaitu melihat katalog, memilih varian dan ukuran produk, lalu menambahkannya ke keranjang. Tahap ini akan membawa pelanggan ke proses Pembayaran, yang memiliki hubungan langsung ke Bukti Pembayaran (melalui relasi include), dimana pelanggan dapat mengunggah foto bukti transfer jika tidak menggunakan COD. Setelah itu, pelanggan dapat memantau Status Pesanan yang saling terhubung dengan fitur Lacak Pesanan, yang memungkinkan mereka mengetahui apakah pesanan sedang diproses, dikirim, atau telah diterima.
+     Setelah produk diterima, pelanggan masuk ke tahap Peneriman Pesanan dan dapat melanjutkan dengan Ulasan dan Rating terhadap produk, mencakup pemberian Bintang (1-5) dan komentar tertulis yang dapat dibaca publik. Proses ini mencerminkan sistem dua arah antara pelanggan dan admin yang mendukung evaluasi dan peningkatan mutu layanan. Pelanggan juga dapat melakukan Logout untuk keluar dari sistem setelah aktivitas selesai.
 
-![Pelanggan Fix](https://github.com/user-attachments/assets/eee7520d-17e8-4780-9900-cd7fd7b75b5b)
+![Use Case Pelanggan](https://github.com/user-attachments/assets/41ee656c-39e7-4541-b674-df5d61aceb78)
+
+### 3. Use Case Diagram Gabung
+![Use Case Gabungan](https://github.com/user-attachments/assets/0797c192-57ad-42c8-8c9a-18d8330cca0f)
