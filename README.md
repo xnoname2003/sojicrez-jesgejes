@@ -33,8 +33,8 @@ Usaha Kripik Isal adalah bisnis rumahan yang didirikan pada 2014 dan bergerak di
 
 1. [Aktor yang Terlibat dan Use Case Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/revalina/Use%20Case.md)
 2. [Entitas Utama/Master, Relasi/Transaksi dan ERD](https://github.com/xnoname2003/sojicrez-jesgejes/blob/chaerul/ERD.md)
-3. [Class Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-wali-arubusman/ClassDiagramAPBO.drawio%20(9).png)
+3. [Class Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/ClassDiagramAPBO.drawio%20(11).png)
 4. [Sequence Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/revalina/Sequence%20Diagram.md)
 5. [Wireframe dan Mockup Admin](https://github.com/xnoname2003/sojicrez-jesgejes/tree/avryzel)
 6. [Wireframe dan Mockup Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/tree/soja)
-7. [Laporan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/UTS_KripikIsal_APBO_A_Kelompok_SojicrezJesgejes_15Mei2025.pdf)
+7. [Laporan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Revisi_UTS_KripikIsal_APBO_A_Kelompok_SojicrezJesgejes_15Mei2025.pdf)
