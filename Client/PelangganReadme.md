@@ -17,52 +17,66 @@
 
 # Landing Page
 ## Wireframe
-![Landing Page](https://github.com/user-attachments/assets/fd325825-eab2-409c-84fc-bf389fde7682)
+![Landing Page](https://github.com/user-attachments/assets/4ba26627-ff25-4a12-b26f-0560cebf62f2)
 ## Mockup
-![Landing Page](https://github.com/user-attachments/assets/22d2e9eb-b612-4032-8220-214b14249b11)
+![Landing Page](https://github.com/user-attachments/assets/348f53f8-492d-4a8e-a0d0-f332d109e7b3)
+
 ### Cara Kerja : Pada landing page, pelanggan dapat melihat berbagai produk lengkap dengan deskripsi dan ulasan sebelumnya 
 
 # Cart Page
 ## Wireframe
-![Detail Cart](https://github.com/user-attachments/assets/6146ab92-a5f2-4e1a-b430-9093f0436a58)
+![Detail Cart](https://github.com/user-attachments/assets/4b750a42-ae3f-4ef3-96d4-dfa8e18b6f86)
+
 ## Mockup
-![Detail Cart](https://github.com/user-attachments/assets/eb2d7ed2-66e8-42ad-9861-1e8a49e7a10c)
+![Detail Cart](https://github.com/user-attachments/assets/d65b1245-3bca-4366-85c2-ccbdae8b1717)
 ### Cara Kerja : Pelanggan memilih produk, menentukan jumlah/ukuran, lalu memasukkannya ke dalam keranjang 
 
 ### Checkout Page
 ## Wireframe
-![Checkout Page](https://github.com/user-attachments/assets/58d5c9c3-6fe0-4028-9bc9-536da544bf29)
-![Detail Checkout Page](https://github.com/user-attachments/assets/785c0165-3baf-4d61-93c4-3d0df6ab4125)
+![Checkout Page(1)](https://github.com/user-attachments/assets/bc5fffe2-172b-4702-9128-6d7d12937a56)
+![Detail Checkout Page](https://github.com/user-attachments/assets/806bb14e-2895-4069-8681-5b8c631dcbdd)
+
 ## Mockup
-![Checkout Page](https://github.com/user-attachments/assets/3e31192d-3d61-4320-b35b-f589db9c4eec)
-![Checkout Page (Detail)](https://github.com/user-attachments/assets/d9dc67ed-c21a-4216-b070-9d51cd7905ec)
+![Checkout Page(1)](https://github.com/user-attachments/assets/0a568492-0dd5-4f3f-8dbf-6ae4482b3a47)
+![Checkout Page(1)](https://github.com/user-attachments/assets/e6cc6683-e5ed-43a5-bb71-68239ed01569)
+
 ### Cara Kerja : Selanjutnya, pelanggan melanjutkan ke checkout dengan memilih metode pembayaran dan jasa pengiriman 
 
 # Inovoice Page
 ## Wireframe
 ### Unpaid
-![Invoice Page](https://github.com/user-attachments/assets/e3515777-40a9-45df-b2d7-3e32d0ae53c5)
+![Invoice Page](https://github.com/user-attachments/assets/a9e2a4e8-bf34-41c4-aa14-3afa0fef706f)
+
 ### Paid
-![Invoice Page Paid](https://github.com/user-attachments/assets/7df7245a-92ed-402c-9f47-5363fa96cbbd)
+![Invoice Page Paid(1)](https://github.com/user-attachments/assets/2b04bfca-77ab-4416-b252-05e7ee929095)
+
 ## Mockup
 ### Unpaid
-![Invoice Page](https://github.com/user-attachments/assets/de0a03cd-0254-4181-8652-88a809f507f6)
+![Invoice Page](https://github.com/user-attachments/assets/dc47ce9d-2ecf-453e-8e12-1d7d0f56f4cf)
+
 ### Paid
-![Invoice Page Paid](https://github.com/user-attachments/assets/db4c7335-a9e1-49c3-9077-33ad791705ee)
+![Invoice Page Paid(1)](https://github.com/user-attachments/assets/864c9a20-a6c9-4ff6-9de4-b1b59719e4b2)
+
 ### Cara Kerja : Setelah pembayaran dilakukan, pelanggan mengunggah bukti pembayaran ke sistem dan dapat melihat statusnya di bagian invoice 
 
-# Checkout Page
+# My Transaction Page
 ## Wireframe
-![Cek Status Pesanan - Your Orders(1)](https://github.com/user-attachments/assets/5c5aac48-5c70-4ef0-8cb5-962de24a5c35)
-![Cek Status Pesanan - Detail Order](https://github.com/user-attachments/assets/c93a414e-a08d-4e33-8560-8f65e0be7756)
+![Cek Status Pesanan - Your Orders(2)](https://github.com/user-attachments/assets/b35f05f9-ca86-47e5-ae49-16e04dc0bfdb)
+
+![Cek Status Pesanan - Detail Order](https://github.com/user-attachments/assets/7144cb34-a166-4544-b8d7-bc5a7950bbfe)
+
 ## Mockup
-![Cek Status Pesanan - Your Orders](https://github.com/user-attachments/assets/3716db4c-55c7-4c7d-99e0-f206decb5fcc)
-![Cek Status Pesanan - Detail Order](https://github.com/user-attachments/assets/2283b676-a092-44cc-8c08-28c8205cbad6)
+![Cek Status Pesanan - Your Orders(2)](https://github.com/user-attachments/assets/95fa4463-325d-4c88-b135-a9efb1785139)
+![Cek Status Pesanan - Detail Order](https://github.com/user-attachments/assets/0a008c4a-180a-4a96-bc53-1529dfa8793b)
+
+
 ### Cara Kerja : Pelanggan dapat melacak pesanan mereka melalui menu Your Orders dan mengecek apakah statusnya sudah shipped atau delivered 
 
 # Detail Review Page
 ## Wireframe
-![Detail Product - Review](https://github.com/user-attachments/assets/f92348aa-20cf-4c3d-9e36-670b50854dc6)
+![Detail Product - Review](https://github.com/user-attachments/assets/020cf871-c5f5-478d-aa0f-fd9b1bc55f57)
+
 ## Mockup
-![Detail Product - Review](https://github.com/user-attachments/assets/9f08cfb1-b7d1-4cae-a543-d378911ffaa0)
+![Detail Product - Review](https://github.com/user-attachments/assets/acf0bc02-90b6-4bc0-be91-001efdc9290c)
+
 ### Cara Kerja : Setelah produk diterima, pelanggan dapat memberikan ulasan dan rating melalui menu review produk 
