@@ -41,54 +41,64 @@
 ## Tabel Master dan Relasi Sistem Penjualan Kripik Isal
 
 ### 1. Table Master
-- Master Pelanggan (Ms_Pelanggan)
+- Master Role (Ms_Role)
   ``` sql
-  CREATE TABLE Ms_Pelanggan (
-    idPelanggan CHAR(6) PRIMARY KEY,
-    username VARCHAR(50),
-    email VARCHAR(100),
-    password VARCHAR(255),
-    no_hp BIGINT,
-    nama_pelanggan VARCHAR(100),
-    foto_pelanggan VARCHAR(255),
+  CREATE TABLE Ms_Role (
+    idRole CHAR(6) PRIMARY KEY,
+    nama_role VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   ```
-  | Nama Atribut     | Tipe Data        | Keterangan                      |
-  |------------------|------------------|---------------------------------|
-  | idPelanggan      | char(6) (PK)     | ID unik pelanggan               |
-  | username         | varchar(50)      | Username pelanggan              |
-  | email            | varchar(100)     | Email pelanggan                 |
-  | password         | varchar(255)     | Password pelanggan              |
-  | no_hp            | bigint           | Nomor telepon pelanggan         |
-  | nama_pelanggan   | varchar(100)     | Nama lengkap pelanggan          |
-  | foto_pelanggan   | varchar(255)     | Foto profil pelanggan           |
-  | created_at       | timestamp        | Waktu pembuatan akun pelanggan  |
+  | Nama Atribut | Tipe Data    | Keterangan           |
+  | ------------ | ------------ | -------------------- |
+  | idRole       | CHAR(6)      | Primary key          |
+  | nama\_role   | VARCHAR(100) | Nama peran pengguna  |
+  | created\_at  | TIMESTAMP    | Waktu pembuatan data |
+
+- Master Pelanggan (Ms_Pelanggan)
+  ``` sql
+  CREATE TABLE Ms_Pelanggan (
+    idPelanggan CHAR(6) PRIMARY KEY,
+    idTrxUser CHAR(6) UNIQUE,
+    nama_pelanggan VARCHAR(100),
+    no_hp BIGINT,
+    foto_pelanggan VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  ```
+  | Nama Atribut    | Tipe Data    | Keterangan                                  |
+  | --------------- | ------------ | ------------------------------------------- |
+  | idPelanggan     | CHAR(6)      | Primary key                                 |
+  | idTrxUser       | CHAR(6)      | Foreign key ke `Trx_User.idTrxUser`, UNIQUE |
+  | nama\_pelanggan | VARCHAR(100) | Nama pelanggan                              |
+  | no\_hp          | BIGINT       | Nomor HP                                    |
+  | foto\_pelanggan | VARCHAR(255) | Lokasi foto pelanggan                       |
+  | created\_at     | TIMESTAMP    | Waktu pembuatan data                        |
 
 - Master Admin (Ms_Admin)
   ``` sql
   CREATE TABLE Ms_Admin (
     idAdmin CHAR(6) PRIMARY KEY,
-    username VARCHAR(50),
-    email VARCHAR(100),
-    password VARCHAR(255),
+    idTrxUser CHAR(6) UNIQUE,
+    nama_admin VARCHAR(255),
     no_hp BIGINT,
-    nama_admin VARCHAR(100),
     foto_admin VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
-  | Nama Atribut   | Tipe Data       | Keterangan                     |
-  |----------------|------------------|--------------------------------|
-  | idAdmin        | char(6) (PK)     | ID unik admin                  |
-  | username       | varchar(50)      | Username admin                 |
-  | email          | varchar(100)     | Email admin                    |
-  | password       | varchar(255)     | Password admin                 |
-  | no_hp          | bigint           | Nomor telepon admin            |
-  | nama_admin     | varchar(100)     | Nama lengkap admin             |
-  | foto_admin     | varchar(255)     | Foto profil admin              |
-  | created_at     | timestamp        | Waktu pembuatan akun admin     |
+  | Nama Atribut | Tipe Data    | Keterangan                                  |
+  | ------------ | ------------ | ------------------------------------------- |
+  | idAdmin      | CHAR(6)      | Primary key                                 |
+  | idTrxUser    | CHAR(6)      | Foreign key ke `Trx_User.idTrxUser`, UNIQUE |
+  | nama\_admin  | VARCHAR(255) | Nama admin                                  |
+  | no\_hp       | BIGINT       | Nomor HP                                    |
+  | foto\_admin  | VARCHAR(255) | Lokasi foto admin                           |
+  | created\_at  | TIMESTAMP    | Waktu pembuatan data                        |
+
   
 - Master Produk (Ms_Produk)
   ``` sql
@@ -148,9 +158,85 @@
   | va_payment     | varchar(255)     | Rekening atau virtual account pembayaran |
   | created_at     | timestamp        | Waktu pembuatan pembayaran         |
 
+- Master Provinsi (Ms_Provinsi)
+   ``` sql
+  CREATE TABLE Ms_Provinsi (
+    idProvinsi CHAR(6) PRIMARY KEY,
+    nama_provinsi VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ```
+  | Nama Atribut     | Tipe Data    | Keterangan           |
+  | ------------     | ------------ | -------------------- |
+  | idProvinsi       | CHAR(6)      | Primary key          |
+  | nama_provinsi    | VARCHAR(100) | Nama Provinsi        |
+  | created_at       | TIMESTAMP    | Waktu pembuatan data |
+
+- Master Kota (Ms_Kota)
+   ``` sql
+  CREATE TABLE Ms_Kota (
+    idKota CHAR(6) PRIMARY KEY,
+    nama_kota VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ```
+  | Nama Atribut     | Tipe Data    | Keterangan           |
+  | ------------     | ------------ | -------------------- |
+  | idKota           | CHAR(6)      | Primary key          |
+  | nama_kota        | VARCHAR(100) | Nama Kota            |
+  | created_at       | TIMESTAMP    | Waktu pembuatan data |
+
+- Master Kecamatan (Ms_Kecamatan)
+   ``` sql
+  CREATE TABLE Ms_Kecamatan (
+    idKecamatan CHAR(6) PRIMARY KEY,
+    nama_kecamatan VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ```
+  | Nama Atribut     | Tipe Data    | Keterangan           |
+  | ------------     | ------------ | -------------------- |
+  | idKecamatan      | CHAR(6)      | Primary key          |
+  | nama_kecamatan   | VARCHAR(100) | Nama Kecamatan       |
+  | created_at       | TIMESTAMP    | Waktu pembuatan data |
+
+- Master Kelurahan (Ms_Kelurahan)
+   ``` sql
+  CREATE TABLE Ms_Kelurahan (
+    idKelurahan CHAR(6) PRIMARY KEY,
+    nama_kelurahan VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ```
+  | Nama Atribut     | Tipe Data    | Keterangan           |
+  | ------------     | ------------ | -------------------- |
+  | idKelurahan      | CHAR(6)      | Primary key          |
+  | nama_kelurahan   | VARCHAR(100) | Nama Kelurahan       |
+  | created_at       | TIMESTAMP    | Waktu pembuatan data |
 
 ---
 ### 2. Table Relasi
+- Relasi User (Trx_User)
+   ``` sql
+  CREATE TABLE Trx_User (
+    idTrxUser CHAR(6) PRIMARY KEY,
+    username VARCHAR(100) UNIQUE,
+    email VARCHAR(100),
+    password VARCHAR(255),
+    idRole CHAR(6),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (idRole) REFERENCES Ms_Role(idRole) ON DELETE CASCADE
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ```
+  | Nama Atribut | Tipe Data    | Keterangan                                 |
+  |--------------|--------------|--------------------------------------------|
+  | idTrxUser    | CHAR(6)      | Primary key                                |
+  | username     | VARCHAR(255) | Username, harus unik (UNIQUE)              |
+  | email        | VARCHAR(255) | Email                                      |
+  | password     | VARCHAR(255) | Password (hash)                            |
+  | idRole       | CHAR(6)      | Foreign key ke `Ms_Role.idRole`            |
+  | created_at   | TIMESTAMP    | Waktu pembuatan data                       |
+
 - Relasi Alamat (Trx_Alamat)
   ``` sql
   CREATE TABLE Trx_Alamat (
@@ -158,9 +244,10 @@
     idPelanggan CHAR(6),
     nama_lengkap VARCHAR(255),
     no_hp BIGINT,
-    provinsi VARCHAR(100),
-    kota VARCHAR(100),
-    kecamatan VARCHAR(100),
+    idProvinsi CHAR(6),
+    idKota CHAR(6),
+    idKecamatan CHAR(6),
+    idKelurahan CHAR(6),
     kode_pos INT,
     nama_jalan VARCHAR(255),
     detail_lainnya VARCHAR(255),
@@ -168,25 +255,30 @@
     isAlamatPribadi BOOLEAN DEFAULT FALSE,
     isAlamatUtama BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE
+    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE,
+    FOREIGN KEY (idProvinsi) REFERENCES Ms_Provinsi(idProvinsi) ON DELETE CASCADE,
+    FOREIGN KEY (idKota) REFERENCES Ms_Kota(idKota) ON DELETE CASCADE,
+    FOREIGN KEY (idKecamatan) REFERENCES Ms_Kecamatan(idKecamatan) ON DELETE CASCADE,
+    FOREIGN KEY (idKelurahan) REFERENCES Ms_Kelurahan(idKelurahan) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
-  | Nama Atribut     | Tipe Data          | Keterangan                                   |
-  |------------------|--------------------|----------------------------------------------|
-  | idTrxAlamat      | char(6) (PK)       | ID unik alamat                               |
-  | idPelanggan      | char(6) (FK)       | ID unik pelanggan                            |
-  | nama_lengkap     | varchar(255)       | Nama lengkap penerima paket                   |
-  | no_hp            | bigint             | No telepon penerima                          |
-  | provinsi         | varchar(100)       | Provinsi penerima                            |
-  | kota             | varchar(100)       | Kota penerima                                |
-  | kecamatan        | varchar(100)       | Kecamatan penerima                           |
-  | kode_pos         | int                | Kode pos penerima                            |
-  | nama_jalan       | varchar(255)       | Nama jalan penerima                          |
-  | detail_lainnya   | varchar(255)       | Detail lainnya alamat penerima               |
-  | tandai           | enum               | Tandai alamat sebagai apa (rumah/kantor)    |
-  | isAlamatPribadi  | boolean            | Validasi sebagai alamat pribadi              |
-  | isAlamatUtama    | boolean            | Validasi sebagai alamat utama                |
-  | created_at       | timestamp          | Waktu pembuatan alamat                       |
+  | Nama Atribut    | Tipe Data    | Keterangan                    |
+  | --------------- | ------------ | ----------------------------- |
+  | idTrxAlamat     | CHAR(6)      | Primary key                   |
+  | idPelanggan     | CHAR(6)      | Foreign key ke `Ms_Pelanggan` |
+  | nama_lengkap    | VARCHAR(255) | Nama penerima                 |
+  | no_hp           | BIGINT       | Nomor HP                      |
+  | idProvinsi      | CHAR(6)      | FK ke `Ms_Provinsi`           |
+  | idKota          | CHAR(6)      | FK ke `Ms_Kota`               |
+  | idKecamatan     | CHAR(6)      | FK ke `Ms_Kecamatan`          |
+  | idKelurahan     | CHAR(6)      | FK ke `Ms_Kelurahan`          |
+  | kode_pos        | INT          | Kode pos                      |
+  | nama_jalan      | VARCHAR(255) | Alamat jalan utama            |
+  | detail_lainnya  | VARCHAR(255) | Detail tambahan               |
+  | tandai          | ENUM(...)    | Penanda alamat (rumah/kantor) |
+  | isAlamatPribadi | BOOLEAN      | True jika pribadi             |
+  | isAlamatUtama   | BOOLEAN      | True jika alamat utama        |
+  | created_at      | TIMESTAMP    | Waktu pembuatan data          |
   
 - Relasi Foto Produk (Trx_Foto_Produk)
   ``` sql
