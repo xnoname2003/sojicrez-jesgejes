@@ -4,38 +4,37 @@
 
 ---
 ## Tabel Relasi Sistem Penjualan Kripik Isal
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/377c7579-391a-4bc8-b326-ab1c1da10b8d" />
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/6eb70d41-ce18-4a1c-9245-b759c569e556" />
 
 ---
 ## Penjelasan Relasi Antar Tabel
 
-| No | Entitas 1           | Entitas 2           | Tipe Relasi   | Penjelasan                                                                 |
-|----|---------------------|---------------------|---------------|----------------------------------------------------------------------------|
-| 1  | Trx_User            | Ms_Pelanggan        | One-to-One    | Setiap user yang berperan sebagai pelanggan memiliki satu data profil pelanggan |
-| 2  | Trx_User            | Ms_Admin            | One-to-One    | Setiap user yang berperan sebagai admin memiliki satu data profil admin   |
-| 3  | Trx_User            | Ms_Role             | Many-to-One   | Setiap user memiliki satu role, misalnya admin atau pelanggan             |
-| 4  | Trx_Alamat          | Ms_Pelanggan        | Many-to-One   | Pelanggan bisa memiliki banyak alamat                                     |
-| 5  | Trx_Alamat          | Ms_Provinsi         | Many-to-One   | Alamat terhubung ke satu provinsi                                         |
-| 6  | Trx_Alamat          | Ms_Kota             | Many-to-One   | Alamat terhubung ke satu kota                                             |
-| 7  | Trx_Alamat          | Ms_Kecamatan        | Many-to-One   | Alamat terhubung ke satu kecamatan                                        |
-| 8  | Trx_Alamat          | Ms_Kelurahan        | Many-to-One   | Alamat terhubung ke satu kelurahan                                        |
-| 9  | Trx_Foto_Produk     | Ms_Produk           | Many-to-One   | Satu produk bisa memiliki banyak foto                                     |
-| 10 | Trx_Layanan_Ekspedisi | Ms_Ekspedisi      | Many-to-One   | Satu ekspedisi bisa punya banyak layanan                                  |
-| 11 | Trx_Keranjang       | Ms_Pelanggan        | Many-to-One   | Pelanggan bisa memiliki banyak item keranjang                             |
-| 12 | Trx_Keranjang       | Ms_Produk           | Many-to-One   | Setiap item keranjang mengacu ke satu produk                              |
-| 13 | Trx_Keranjang       | Trx_Checkout        | Many-to-One   | Item keranjang bisa dihubungkan ke satu transaksi checkout (nullable)     |
-| 14 | Trx_Checkout        | Ms_Pelanggan        | Many-to-One   | Pelanggan bisa melakukan banyak checkout                                  |
-| 15 | Trx_Checkout        | Ms_Ekspedisi        | Many-to-One   | Setiap transaksi checkout menggunakan satu ekspedisi                      |
-| 16 | Trx_Checkout        | Ms_Admin            | Many-to-One   | Admin sebagai updater transaksi (pada kolom `updated_by`)                 |
-| 17 | Trx_Payment         | Trx_Checkout        | One-to-One    | Setiap transaksi hanya memiliki satu pembayaran                           |
-| 18 | Trx_Payment         | Ms_Payments         | Many-to-One   | Pembayaran dilakukan menggunakan salah satu metode dari Ms_Payments       |
-| 19 | Trx_Ulasan          | Ms_Pelanggan        | Many-to-One   | Pelanggan dapat memberikan beberapa ulasan                                |
-| 20 | Trx_Ulasan          | Ms_Produk           | Many-to-One   | Produk bisa memiliki banyak ulasan                                        |
-| 21 | Trx_Komplain        | Ms_Pelanggan        | Many-to-One   | Pelanggan dapat mengajukan banyak komplain                                |
-| 22 | Trx_Komplain        | Trx_Checkout        | Many-to-One   | Komplain berhubungan dengan satu transaksi checkout                       |
-| 23 | Trx_Komplain_Chat   | Trx_Komplain        | Many-to-One   | Satu komplain dapat memiliki banyak pesan chat                            |
-| 24 | Trx_Komplain_Chat   | Ms_Admin            | Many-to-One   | Chat dapat dikirim oleh admin (nullable)                                  |
-| 25 | Trx_Komplain_Chat   | Ms_Pelanggan        | Many-to-One   | Chat dapat dikirim oleh pelanggan (nullable)                              |
+| No | Entitas 1            | Entitas 2            | Tipe Relasi    | Penjelasan                                                                 |
+|----|----------------------|----------------------|----------------|---------------------------------------------------------------------------|
+| 1  | Trx_User             | Ms_Role              | Many-to-One    | Setiap user memiliki satu role tertentu.                                  |
+| 2  | Ms_Pelanggan         | Trx_User             | One-to-One     | Setiap pelanggan adalah satu user (unik), referensi dari Trx_User.        |
+| 3  | Ms_Admin             | Trx_User             | One-to-One     | Setiap admin adalah satu user (unik), referensi dari Trx_User.            |
+| 4  | Trx_Alamat           | Ms_Pelanggan         | Many-to-One    | Satu pelanggan bisa punya banyak alamat.                                  |
+| 5  | Trx_Alamat           | Ms_Provinsi          | Many-to-One    | Alamat merujuk ke satu provinsi.                                          |
+| 6  | Trx_Alamat           | Ms_Kota              | Many-to-One    | Alamat merujuk ke satu kota.                                              |
+| 7  | Trx_Alamat           | Ms_Kecamatan         | Many-to-One    | Alamat merujuk ke satu kecamatan.                                         |
+| 8  | Trx_Alamat           | Ms_Kelurahan         | Many-to-One    | Alamat merujuk ke satu kelurahan.                                         |
+| 9  | Trx_Foto_Produk      | Ms_Produk            | Many-to-One    | Satu produk bisa punya banyak foto.                                       |
+| 10 | Trx_Layanan_Ekspedisi| Ms_Ekspedisi         | Many-to-One    | Satu ekspedisi bisa punya banyak layanan.                                 |
+| 11 | Trx_Keranjang        | Trx_User             | Many-to-One    | Satu user bisa punya banyak item keranjang.                               |
+| 12 | Trx_Keranjang        | Ms_Produk            | Many-to-One    | Setiap item keranjang merujuk ke satu produk.                             |
+| 13 | Trx_Keranjang        | Trx_Checkout         | Many-to-One    | Item keranjang bisa dikaitkan dengan satu transaksi checkout.             |
+| 14 | Trx_Checkout         | Trx_User             | Many-to-One    | Satu user bisa memiliki banyak transaksi checkout.                         |
+| 15 | Trx_Checkout         | Ms_Ekspedisi         | Many-to-One    | Satu transaksi checkout menggunakan satu ekspedisi.                        |
+| 16 | Trx_Checkout         | Trx_User (updated_by)| Many-to-One    | Transaksi bisa diubah oleh satu user (admin atau sistem).                 |
+| 17 | Trx_Payment          | Trx_Checkout         | One-to-One     | Satu pembayaran terkait dengan satu transaksi checkout.                   |
+| 18 | Trx_Payment          | Ms_Payments          | Many-to-One    | Satu metode pembayaran bisa digunakan di banyak transaksi.                |
+| 19 | Trx_Ulasan           | Trx_User             | Many-to-One    | Satu user bisa memberi banyak ulasan.                                     |
+| 20 | Trx_Ulasan           | Ms_Produk            | Many-to-One    | Ulasan diberikan untuk satu produk tertentu.                              |
+| 21 | Trx_Komplain         | Trx_User             | Many-to-One    | Satu user bisa membuat banyak komplain.                                   |
+| 22 | Trx_Komplain         | Trx_Checkout         | Many-to-One    | Komplain dikaitkan dengan satu transaksi checkout.                         |
+| 23 | Trx_Komplain_Chat    | Trx_Komplain         | Many-to-One    | Banyak chat bisa dikaitkan ke satu komplain.                              |
+| 24 | Trx_Komplain_Chat    | Trx_User             | Many-to-One    | Pesan chat dikirim oleh satu user (null jika anonim/sistem).              |
 
 ---
 ## Tabel Master dan Relasi Sistem Penjualan Kripik Isal
@@ -317,24 +316,24 @@
 - Relasi Keranjang (Trx_Keranjang)
   ``` sql
   CREATE TABLE Trx_Keranjang (
-    idTrxKeranjang CHAR(6) PRIMARY KEY,
-    idPelanggan CHAR(6),
-    idProduk CHAR(6),
-    idTrxCheckout CHAR(6),
-    jumlah INT,
-    harga_unit DECIMAL(10,2),
-    subtotal DECIMAL(10,2),
-    isCheckedOut BOOLEAN DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE,
-    FOREIGN KEY (idProduk) REFERENCES Ms_Produk(idProduk) ON DELETE CASCADE,
-    FOREIGN KEY (idTrxCheckout) REFERENCES Trx_Checkout(idTrxCheckout) ON DELETE CASCADE
+  idTrxKeranjang CHAR(6) PRIMARY KEY,
+  idTrxUser CHAR(6),
+  idProduk CHAR(6),
+  idTrxCheckout CHAR(6),
+  jumlah INT,
+  harga_unit DECIMAL(10,2),
+  subtotal DECIMAL(10,2),
+  isCheckedOut BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE,
+  FOREIGN KEY (idProduk) REFERENCES Ms_Produk(idProduk) ON DELETE CASCADE,
+  FOREIGN KEY (idTrxCheckout) REFERENCES Trx_Checkout(idTrxCheckout) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
   | Nama Atribut    | Tipe Data        | Keterangan                            |
   |-----------------|------------------|-------------------------------------|
   | idTrxKeranjang  | char(6) (PK)     | ID unik keranjang                   |
-  | idPelanggan     | char(6) (FK)     | ID unik pelanggan                   |
+  | idTrxUser     | char(6) (FK)     | ID unik pelanggan melalui tabel `Trx_User`                   |
   | idProduk       | char(6) (FK)     | ID unik produk                      |
   | idTrxCheckout   | char(6) (FK)     | ID unik Checkout                    |
   | jumlah         | int              | Jumlah produk                      |
@@ -346,28 +345,28 @@
 - Relasi Checkout (Trx_Checkout)
   ``` sql
   CREATE TABLE Trx_Checkout (
-    idTrxCheckout CHAR(6) PRIMARY KEY,
-    idPelanggan CHAR(6),
-    idEkspedisi CHAR(6),
-    no_order CHAR(19) UNIQUE NOT NULL,
-    status ENUM('pending','confirmed','processing','shipped','delivered','cancelled') DEFAULT 'pending',
-    subtotal DECIMAL(12,2),
-    discount_amount DECIMAL(10,2) DEFAULT 0,
-    total_amount DECIMAL(12,2),
-    isPurchaseWithSistem BOOLEAN DEFAULT TRUE,
-    no_resi VARCHAR(100),
-    updated_by CHAR(6),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE,
-    FOREIGN KEY (idEkspedisi) REFERENCES Ms_Ekspedisi(idEkspedisi) ON DELETE CASCADE,
-    FOREIGN KEY (updated_by) REFERENCES Ms_Admin(idAdmin) ON DELETE SET NULL
+  idTrxCheckout CHAR(6) PRIMARY KEY,
+  idTrxUser CHAR(6),
+  idEkspedisi CHAR(6),
+  no_order CHAR(19) UNIQUE NOT NULL,
+  status ENUM('pending','confirmed','processing','shipped','delivered','cancelled') DEFAULT 'pending',
+  subtotal DECIMAL(12,2),
+  discount_amount DECIMAL(10,2) DEFAULT 0,
+  total_amount DECIMAL(12,2),
+  isPurchaseWithSistem BOOLEAN DEFAULT TRUE,
+  no_resi VARCHAR(100) COMMENT 'Nomor resi pengiriman',
+  updated_by CHAR(6),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE,
+  FOREIGN KEY (idEkspedisi) REFERENCES Ms_Ekspedisi(idEkspedisi) ON DELETE CASCADE,
+  FOREIGN KEY (updated_by) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
   | Nama Atribut        | Tipe Data          | Keterangan                                                                                 |
   |---------------------|--------------------|--------------------------------------------------------------------------------------------|
   | idTrxCheckout       | char(6) (PK)       | ID unik Checkout                                                                           |
-  | idPelanggan         | char(6) (FK)       | ID unik pelanggan                                                                         |
+  | idTrxUser         | char(6) (FK)       | ID unik pelanggan melalui tabel `Trx_User`                                                 |
   | idEkspedisi         | char(6) (FK)       | ID unik ekspedisi                                                                         |
   | no_order            | char(19)           | Nomor unik Pesanan                                                                        |
   | status              | enum               | Status Pesanan ('pending', 'confirmed', 'processing', 'shipped', 'delivered', 'cancelled')|
@@ -409,20 +408,20 @@
 - Relasi Ulasan (Trx_Ulasan)
   ``` sql
   CREATE TABLE Trx_Ulasan (
-    idTrxUlasan CHAR(6) PRIMARY KEY,
-    idPelanggan CHAR(6),
-    idProduk CHAR(6),
-    rating INT COMMENT '1 to 5',
-    isi_ulasan TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE,
-    FOREIGN KEY (idProduk) REFERENCES Ms_Produk(idProduk) ON DELETE CASCADE
+  idTrxUlasan CHAR(6) PRIMARY KEY,
+  idTrxUser CHAR(6),
+  idProduk CHAR(6),
+  rating INT COMMENT '1 to 5',
+  isi_ulasan TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE,
+  FOREIGN KEY (idProduk) REFERENCES Ms_Produk(idProduk) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
   | Nama Atribut  | Tipe Data      | Keterangan             |
   |---------------|----------------|------------------------|
   | idTrxUlasan   | char(6) (PK)   | ID unik ulasan         |
-  | idPelanggan   | char(6) (FK)   | ID unik pelanggan      |
+  | idTrxUser   | char(6) (FK)   | ID unik pelanggan melalui tabel `Trx_User`      |
   | idProduk      | char(6) (FK)   | ID unik produk         |
   | rating        | int            | Rating produk          |
   | isi_ulasan    | text           | Isi ulasan             |
@@ -431,24 +430,20 @@
 - Relasi Komplain (Trx_Komplain)
   ``` sql
   CREATE TABLE Trx_Komplain (
-    idTrxKomplain CHAR(6) PRIMARY KEY,
-    idPelanggan CHAR(6),
-    idTrxCheckout CHAR(6),
-    judul_komplain VARCHAR(100),
-    status ENUM('baru','diproses','selesai') DEFAULT 'baru',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE,
-    FOREIGN KEY (idTrxCheckout) REFERENCES Trx_Checkout(idTrxCheckout) ON DELETE CASCADE
+  idTrxKomplain CHAR(6) PRIMARY KEY,
+  idTrxUser CHAR(6),
+  idTrxCheckout CHAR(6),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE,
+  FOREIGN KEY (idTrxCheckout) REFERENCES Trx_Checkout(idTrxCheckout) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
   | Nama Atribut    | Tipe Data        | Keterangan                 |
   |-----------------|------------------|----------------------------|
   | idTrxKomplain   | char(6) (PK)     | ID unik komplain           |
-  | idPelanggan     | char(6) (FK)     | ID unik pelanggan          |
+  | idTrxUser     | char(6) (FK)     | ID unik pelanggan melalui tabel `Trx_User`         |
   | idTrxCheckout   | char(6) (FK)     | ID unik Checkout           |
-  | judul_komplain  | varchar(100)     | Judul komplain             |
-  | status          | enum             | Status komplain            |
   | created_at      | timestamp        | Waktu pembuatan komplain   |
   | updated_at      | timestamp        | Waktu update komplain      |
 
@@ -457,22 +452,19 @@
   CREATE TABLE Trx_Komplain_Chat (
     idTrxKomplainChat CHAR(6) PRIMARY KEY,
     idTrxKomplain CHAR(6),
-    idAdmin CHAR(6),
-    idPelanggan CHAR(6),
+    idTrxUser CHAR(6),
     isi_pesan TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (idTrxKomplain) REFERENCES Trx_Komplain(idTrxKomplain) ON DELETE CASCADE,
-    FOREIGN KEY (idAdmin) REFERENCES Ms_Admin(idAdmin) ON DELETE CASCADE,
-    FOREIGN KEY (idPelanggan) REFERENCES Ms_Pelanggan(idPelanggan) ON DELETE CASCADE
+    FOREIGN KEY (idTrxUser) REFERENCES Trx_User(idTrxUser) ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   ```
   | Nama Atribut     | Tipe Data      | Keterangan                    |
   |------------------|----------------|-------------------------------|
   | idTrxKomplainChat| char(6) (PK)   | ID unik komplain chat          |
   | idTrxKomplain    | char(6) (FK)   | ID unik komplain               |
-  | idAdmin          | char(6) (FK)   | ID unik admin                  |
-  | idPelanggan      | char(6) (FK)   | ID unik pelanggan              |
+  | idTrxUser          | char(6) (FK)   | ID unik admin atau pelanggan sesuai role                  |
   | isi_pesan        | text           | Isi pesan komplain             |
   | created_at       | timestamp      | Waktu pembuatan komplain chat  |
   | updated_at       | timestamp      | Waktu update komplain chat     |
