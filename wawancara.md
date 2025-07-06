@@ -1,7 +1,5 @@
 # 📄 Hasil Wawancara Usaha Kripik Isal
 
----
-
 ## 📌 Dokumentasi Wawancara
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/6b877b5c-187f-4f6f-9d66-e9ebe5e61a3a" />
