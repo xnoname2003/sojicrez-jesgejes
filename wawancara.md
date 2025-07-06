@@ -4,13 +4,15 @@
 
 ## 📌 Dokumentasi Wawancara
 
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6b877b5c-187f-4f6f-9d66-e9ebe5e61a3a" />
+
 - **Nama Usaha:** Kripik Isal  
 - **Jenis Usaha:** Industri Rumahan Makanan Ringan (Keripik)  
-- **Tanggal Wawancara:** (Isi Tanggal Wawancara)  
+- **Tanggal Wawancara:** Selasa, 20 Mei 2025
 - **Lokasi Wawancara:** Jl. Rawa Kopi 1, Gg H. Dahlan, Pangkalan Jati Baru, Cinere, Depok  
-- **Wawancara Dilakukan Oleh:** (Isi Nama Pewawancara)  
+- **Wawancara Dilakukan Oleh:** Kelompok Sojicrez Jesgejes 
 - **Narasumber:** Pemilik Usaha Kripik Isal  
-- **Metode Wawancara:** Tatap Muka / Online (Pilih Salah Satu)  
+- **Metode Wawancara:** Tatap Muka 
 
 ---
 
