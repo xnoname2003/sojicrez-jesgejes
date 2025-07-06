@@ -2,6 +2,18 @@
 
 ---
 
+## 📌 Dokumentasi Wawancara
+
+- **Nama Usaha:** Kripik Isal  
+- **Jenis Usaha:** Industri Rumahan Makanan Ringan (Keripik)  
+- **Tanggal Wawancara:** (Isi Tanggal Wawancara)  
+- **Lokasi Wawancara:** Jl. Rawa Kopi 1, Gg H. Dahlan, Pangkalan Jati Baru, Cinere, Depok  
+- **Wawancara Dilakukan Oleh:** (Isi Nama Pewawancara)  
+- **Narasumber:** Pemilik Usaha Kripik Isal  
+- **Metode Wawancara:** Tatap Muka / Online (Pilih Salah Satu)  
+
+---
+
 ## A. **What**
 
 ### 1. Apa jenis produk utama yang dihasilkan dalam usaha Kripik Isal, serta bagaimana rincian jenis dan variannya?
@@ -214,4 +226,3 @@
 
 > ✅ **Catatan:**  
 > Wawancara ini menunjukkan bahwa usaha Kripik Isal adalah bisnis rumahan yang sederhana namun adaptif, dengan fokus pada kualitas, kepercayaan konsumen, dan efisiensi biaya.
-
