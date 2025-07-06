@@ -39,3 +39,4 @@ Usaha Kripik Isal adalah bisnis rumahan yang didirikan pada 2014 dan bergerak di
 6. [Wireframe dan Mockup Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/tree/soja)
 7. [Activity Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/chaerul/Activity-Diagram.md)
 8. [Laporan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Revisi_UTS_KripikIsal_APBO_A_Kelompok_SojicrezJesgejes_15Mei2025.pdf)
+9. [Hasil Wawancara Usaha Kripik Isal](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/wawancara.md)
