@@ -26,15 +26,14 @@ Adapun functional requirement dari sistem Kripik Isal adalah sebagai berikut:
 10. Admin menerima notifikasi untuk setiap pesanan masuk dan pembayaran yang perlu dikonfirmasi.
 11. Admin dapat mengonfirmasi pembayaran, lalu memperbarui status pesanan dari pending → confirmed → processing → shipped → delivered.
 12. Sistem memperbarui stok produk secara otomatis setelah transaksi dikonfirmasi.
-13. Jika stok produk menipis, sistem memberi peringatan kepada admin untuk restock.
-14. Admin dapat menambahkan, mengedit, dan menghapus data produk melalui panel kelola produk.
-15. Admin dapat mengelola data pelanggan: melihat profil, menonaktifkan akun, dan memverifikasi pengguna baru.
-16. Sistem mencatat riwayat transaksi dan status pembayaran pelanggan.
-17. Pelanggan dapat memantau status pesanan melalui halaman “Your Orders.”
-18. Setelah produk diterima, pelanggan dapat memberikan rating (1-5 bintang) dan menulis ulasan.
-19. Admin dapat membahas ulasan pelanggan secara publik untuk menjaga reputasi toko.
-20. Sistem menyediakan fitur komplain: pelanggan dapat membuat laporan keluhan terkait pesanan.
-21. Admin dan pelanggan dapat berkomunikasi melalui chat pada fitur komplain untuk menyelesaikan masalah.
-22. Admin dapat mencetak dan mengunduh laporan keuangan dan transaksi dalam format PDF atau Excel.
-23. Sistem dapat menampilkan statistik penjualan dalam bentuk grafik atau tabel harian, mingguan, bulanan, dan tahunan.
-24. Sistem menyediakan autentikasi login khusus untuk admin dan pelanggan, serta fitur logout dan pengaturan akun.
+13. Admin dapat menambahkan, mengedit, dan menghapus data produk melalui panel kelola produk.
+14. Admin dapat mengelola data pelanggan: melihat profil, menonaktifkan akun, dan memverifikasi pengguna baru.
+15. Sistem mencatat riwayat transaksi dan status pembayaran pelanggan.
+16. Pelanggan dapat memantau status pesanan melalui halaman “Your Orders.”
+17. Setelah produk diterima, pelanggan dapat memberikan rating (1-5 bintang) dan menulis ulasan.
+18. Admin dapat membahas ulasan pelanggan secara publik untuk menjaga reputasi toko.
+19. Sistem menyediakan fitur komplain: pelanggan dapat membuat laporan keluhan terkait pesanan.
+20. Admin dan pelanggan dapat berkomunikasi melalui chat pada fitur komplain untuk menyelesaikan masalah.
+21. Admin dapat mencetak dan mengunduh laporan keuangan dan transaksi dalam format PDF atau Excel.
+22. Sistem dapat menampilkan statistik penjualan dalam bentuk grafik atau tabel harian, mingguan, bulanan, dan tahunan.
+23. Sistem menyediakan autentikasi login khusus untuk admin dan pelanggan, serta fitur logout dan pengaturan akun.
