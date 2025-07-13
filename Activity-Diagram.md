@@ -1,6 +1,6 @@
 ---
 ## Activity Diagram Penjualan Dengan Sistem
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/d9eca72b-b994-4167-a3e8-2612086963ad" />
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/9216a164-2750-4748-8bd6-58e920fa15b8" />
 
 ---
 ## Activity Diagram Penjualan Tanpa Sistem
