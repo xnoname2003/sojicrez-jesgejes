@@ -35,6 +35,14 @@ Usaha Kripik Isal adalah bisnis rumahan yang didirikan pada 2014 dan bergerak di
 2. [Entitas Utama/Master, Relasi/Transaksi dan ERD](https://github.com/xnoname2003/sojicrez-jesgejes/blob/chaerul/ERD.md)
 3. [Class Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/classdiagram.jpg)
 4. [Sequence Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/revalina/Sequence%20Diagram.md)
+    a. Use Case 1: Registrasi dan Login Pelanggan
+        a.a
+    b. Use Case 2: Menambah Produk ke Keranjang
+    c. Use Case 3: Produk dan Pembayaran
+    d. Use Case 4: Upload Bukti Pembayaran
+    e. Use Case 5: Admin Verifikasi Pembayaran
+    f. Use Case 6: Pelanggan Memberi Ulasan
+    g. Use Case 7: Tracking Pesanan
 5. [Wireframe dan Mockup Admin](https://github.com/xnoname2003/sojicrez-jesgejes/tree/avryzel)
 6. [Wireframe dan Mockup Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/tree/soja)
 7. [Activity Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/chaerul/Activity-Diagram.md)
