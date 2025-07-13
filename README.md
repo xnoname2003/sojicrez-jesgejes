@@ -36,25 +36,25 @@ Usaha Kripik Isal adalah bisnis rumahan yang didirikan pada 2014 dan bergerak di
 3. [Class Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/classdiagram.jpg)
 4. [Sequence Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/revalina/Sequence%20Diagram.md)  
     - a. Use Case 1: Registrasi dan Login Pelanggan
-        - [a.a. Registrasi Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%201%20-%20Registrasi%20dan%20Login%20Pelanggan/registrasi.md)  
-        - [a.b. Login Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%201%20-%20Registrasi%20dan%20Login%20Pelanggan/login.md)  
+        - [a.a. Registrasi Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/Registrasi%20Pelanggan.png)  
+        - [a.b. Login Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/Login%20Pelanggan.png)  
     - b. Use Case 2: Menambah Produk ke Keranjang
-        - [b.a. Menambah Produk ke Keranjang](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%202%20-%20Menambah%20Produk%20Ke%20Keranjang/menambah.md)  
+        - [b.a. Menambah Produk ke Keranjang](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/MenambahProdukkeKeranjang.drawio.png)  
     - c. Use Case 3: Produk dan Pembayaran
-        - [c.a. Create Order](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%203%20-%20Produk%20Dan%20Pembayaran/create-order.md)  
-        - [c.b. Checkout Process](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%203%20-%20Produk%20Dan%20Pembayaran/checkout.md)  
-        - [c.c. Payment Process](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%203%20-%20Produk%20Dan%20Pembayaran/payment.md)  
+        - [c.a. Create Order](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/createOrder.drawio.png)  
+        - [c.b. Checkout Process](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/CheckOutProcess.drawio.png)  
+        - [c.c. Payment Process](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/PaymentProcess.drawio.png)  
     - d. Use Case 4: Upload Bukti Pembayaran
-        - [d.a. Upload Bukti Pembayaran](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%204%20-%20Upload%20Bukti%20Pembayaran/upload.md)  
+        - [d.a. Upload Bukti Pembayaran](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/UploadBuktiPembayaran.drawio.png)  
     - e. Use Case 5: Admin Verifikasi Pembayaran 
-        - [e.a. View Pending Payment](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%205%20-%20Admin%20Verifikasi%20Pembayaran/view.md)  
-        - [e.b. Verify Pending Payment](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%205%20-%20Admin%20Verifikasi%20Pembayaran/verify.md)  
+        - [e.a. View Pending Payment](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/ViewPendingPayment.drawio.png)  
+        - [e.b. Verify Pending Payment](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/verifyPendingPayment.drawio.png)  
     - f. Use Case 6: Pelanggan Memberi Ulasan
-        - [f.a. View Product Detail](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%206%20-%20Pelanggan%20Memberi%20Ulasan/view.md)  
-        - [f.b. Submit Review](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%206%20-%20Pelanggan%20Memberi%20Ulasan/review.md)  
+        - [f.a. View Product Detail](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/viewproductdetail.drawio.png)  
+        - [f.b. Submit Review](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/submitReview.drawio.png)  
     - g. Use Case 7: Tracking Pesanan 
-        - [g.a. View Order History](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%207%20-%20Tracking%20Pesanan/history.md)  
-        - [g.b. View Order Details](https://github.com/xnoname2003/sojicrez-jesgejes/blob/main/Sequence/Use%20Case%207%20-%20Tracking%20Pesanan/detail.md)  
+        - [g.a. View Order History](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/vieworderHistory.drawio.png)  
+        - [g.b. View Order Details](https://github.com/xnoname2003/sojicrez-jesgejes/blob/Zidan-Wali/submitReview.drawio.png)  
 5. [Wireframe dan Mockup Admin](https://github.com/xnoname2003/sojicrez-jesgejes/tree/avryzel)
 6. [Wireframe dan Mockup Pelanggan](https://github.com/xnoname2003/sojicrez-jesgejes/tree/soja)
 7. [Activity Diagram](https://github.com/xnoname2003/sojicrez-jesgejes/blob/chaerul/Activity-Diagram.md)
