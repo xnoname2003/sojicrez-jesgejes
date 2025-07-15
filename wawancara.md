@@ -236,20 +236,32 @@
 1. Apakah setiap transaksi penjualan saat ini dicatat secara manual atau langsung dihitung di tempat? (**Ya**/Tidak)
 2. Apakah Anda menjual produk dengan harga yang tetap untuk semua jenis pembeli (eceran dan grosir)? (**Ya**/Tidak)
 
+---
+
 ## B. **Who**
 - Apakah Anda sendiri yang menangani proses transaksi dengan pembeli, baik offline maupun online? (**Ya**/Tidak)
 
+---
+
 ## C. **When**
 - Apakah transaksi penjualan dilakukan setiap hari secara rutin? (**Ya**/Tidak)
+
+---
 
 ## D. **Where**
 1. Apakah penjualan dilakukan melalui lebih dari satu kanal (offline dan online)? (**Ya**/Tidak)
 2. Apakah pelanggan bisa datang langsung ke lokasi untuk membeli produk? (**Ya**/Tidak)
 
+---
+
 ## E. **Why**
 - Apakah Anda mengalami kesulitan saat harus melayani beberapa pelanggan sekaligus? (**Ya**/Tidak)
+
+---
 
 ## F. **How**
 1. Apakah pelanggan dapat memesan produk melalui WhatsApp atau Instagram? (**Ya**/Tidak)
 2. Apakah Anda menyediakan sistem pembayaran non-tunai seperti transfer bank? (**Ya**/Tidak)
 3. Apakah Anda ingin sistem yang bisa langsung menghitung total transaksi, ongkir, dan stok otomatis saat penjualan terjadi? (**Ya**/Tidak)
+
+---
