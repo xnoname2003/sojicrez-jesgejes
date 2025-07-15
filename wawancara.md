@@ -4,6 +4,8 @@
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/6b877b5c-187f-4f6f-9d66-e9ebe5e61a3a" />
 
+<img width="413" height="232" alt="image" src="https://github.com/user-attachments/assets/5fa993b4-517f-4e07-b133-c3131b275c93" />
+
 - **Nama Usaha:** Kripik Isal  
 - **Jenis Usaha:** Industri Rumahan Makanan Ringan (Keripik)  
 - **Tanggal Wawancara:** Selasa, 20 Mei 2025
@@ -13,7 +15,7 @@
 - **Metode Wawancara:** Tatap Muka 
 
 ---
-
+## Pertanyaan Terbuka
 ## A. **What**
 
 ### 1. Apa jenis produk utama yang dihasilkan dalam usaha Kripik Isal, serta bagaimana rincian jenis dan variannya?
@@ -226,3 +228,28 @@
 
 > ✅ **Catatan:**  
 > Wawancara ini menunjukkan bahwa usaha Kripik Isal adalah bisnis rumahan yang sederhana namun adaptif, dengan fokus pada kualitas, kepercayaan konsumen, dan efisiensi biaya.
+
+---
+
+## Pertanyaan Tertutup
+## A. **What**
+1. Apakah setiap transaksi penjualan saat ini dicatat secara manual atau langsung dihitung di tempat? (**Ya**/Tidak)
+2. Apakah Anda menjual produk dengan harga yang tetap untuk semua jenis pembeli (eceran dan grosir)? (**Ya**/Tidak)
+
+## B. **Who**
+- Apakah Anda sendiri yang menangani proses transaksi dengan pembeli, baik offline maupun online? (**Ya**/Tidak)
+
+## C. **When**
+- Apakah transaksi penjualan dilakukan setiap hari secara rutin? (**Ya**/Tidak)
+
+## D. **Where**
+1. Apakah penjualan dilakukan melalui lebih dari satu kanal (offline dan online)? (**Ya**/Tidak)
+2. Apakah pelanggan bisa datang langsung ke lokasi untuk membeli produk? (**Ya**/Tidak)
+
+## E. **Why**
+- Apakah Anda mengalami kesulitan saat harus melayani beberapa pelanggan sekaligus? (**Ya**/Tidak)
+
+## F. **How**
+1. Apakah pelanggan dapat memesan produk melalui WhatsApp atau Instagram? (**Ya**/Tidak)
+2. Apakah Anda menyediakan sistem pembayaran non-tunai seperti transfer bank? (**Ya**/Tidak)
+3. Apakah Anda ingin sistem yang bisa langsung menghitung total transaksi, ongkir, dan stok otomatis saat penjualan terjadi? (**Ya**/Tidak)
