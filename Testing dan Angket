@@ -1,0 +1,91 @@
+# Angket dan Hasil Angket
+
+---
+
+## A. Angket Admin
+
+---
+
+| No. |                                           Kategori                                 |                                                                                      Pernyataan                                                                          | SS | S | CS | TS | STS |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|  1  |            Fungsi - Fungsi yang tidak benar atau hilang [Fungsionalitas]           | Fitur berfungsi dengan baik dan dapat digunakan untuk mengelola produk dan pesanan.                                                                                      | ✅ |   |    |    |     |
+|     |                                                                                    | Mengalami hambatan ketika menggunakan aplikasi untuk melakukan pengelolaan pesanan.                                                                                      |    |   |    | ✅ |     |
+|     |                                                                                    | Kebutuhan yang diinginkan dan diperlukan tidak terdapat pada dashboard admin, membuat terjadinya hambatan dalam pengelolaan.                                             |    |   |    |    | ✅ |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|     |                                  Spesifik                                          | Fitur pembuatan laporan pada dashboard admin berfungsi untuk menghasilkan laporan penjualan secara akurat.                                                               |    | ✅ |    |    |     |
+|     |                                                                                    | Menu pengiriman dapat diatur sesuai dengan kemauan.                                                                                                                      |    |   | ✅ |    |     |                          
+|     |                                                                                    | Fitur kelola produk dapat diatur dan ditambahkan sesuai keinginan.                                                                                                       |    |   |    |    | ✅  |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|  2  |                Kesalahan pada Interface [UI / User Interface]                      | Fitur-fitur pada website mudah untuk dipahami cara penggunaannya dari tampilan yang disediakan.                                                                          |    | ✅ |    |    |     |
+|     |                                                                                    | Terdapat bagian dari aplikasi yang tampilannya membingungkan saat penggunaan aplikasi.                                                                                   |    |   |    |    | ✅ |
+|     |                                                                                    | Ketidakkonsistenan desain tombol dan elemen interaktif di setiap halaman menyulitkan pengguna dalam beradaptasi.                                                         |    |   |    | ✅ |     |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|     |                                 Spesifik                                           | Tampilan menu dashboard admin mudah dikenali dan sesuai urutan penggunaan pengelola.                                                                                     | ✅ |   |    |    |     |
+|     |                                                                                    | Warna status indikator untuk pesanan (pending, completed, cancelled) menggunakan skema warna yang terlalu mirip, membuat admin sulit membedakan status secara cepat.     |    |   | ✅ |    |     |
+|     |                                                                                    | Sidebar menu dashboard admin tidak memiliki grouping kategori yang logis, fitur-fitur terkait tersebar di berbagai section yang tidak berkaitan.                         |    |   |    | ✅ |     |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|  3  | Kesalahan dalam Struktur Data atau Akses Database Eksternal [UX / User eXperience] | Data produk yang ditampilkan pada dashboard admin tidak selalu update secara real-time dengan database.                                                                  |    |   | ✅ |    |     |
+|     |                                                                                    | Proses sinkronisasi data antar sistem mengalami delay yang memengaruhi data yang tampil pada dashboard admin dengan pengguna.                                            |    |   | ✅ |    |     |
+|     |                                                                                    | Format data yang tidak konsisten muncul di berbagai section aplikasi.                                                                                                    |    |   | ✅ |    |     |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|     |                                Spesifik                                            | Stok produk yang ditampilkan di halaman utama berbeda dengan stok aktual pada saat checkout, menyebabkan berbelanja pengalaman pelanggan menjadi terganggu.              |    |   |    | ✅ |     |
+|     |                                                                                    | Data riwayat transaksi pelanggan terkadang tidak muncul pada tabel kelola penjualan, karena terjadinya gangguan koneksi.                                                 |    |   |    | ✅ |     |
+|     |                                                                                    | Proses download file laporan penjualan membutuhkan waktu yang lama.                                                                                                      |    |   | ✅ |    |     |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|  4  |                     Kesalahan Kinerja [UX / User eXperience]                       | Loading time pada halaman website admin lebih lambat dari standar yang diharapkan.                                                                                       |    |   | ✅ |   ,|     |
+|     |                                                                                    | Responsivitas dari website menurut kala traffic sedang tinggi atau adanya penggunaan secara bersamaan berskala tinggi.                                                   |    |   | ✅ |    |     |
+|     |                               Spesifik                                             | Halaman login ke halaman dashboard membutuhkan waktu lebih dari 7 detik untuk diakses pada saat jam operasional, menghambat kinerja dari staff.                          |    |   |    | ✅ |     |
+|     |                                                                                    | Proses pengeditan data pengguna oleh admin terasa lambat atau tidak berfungsi ketika web diakses secara bersamaan.                                                       |    | ✅ |    |    |     |
+|     |                                                                                    | Fitur grafik performa dari laporan berkala (penjualan harian/mingguan) sering kali tidak muncul saat data yang masuk jumlahnya dalam skala besar.                        | ✅ |   |    |    |     |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|  5  |                 Inisialisasi dan Kesalahan Terminasi [Aksesibilitas]               | Mengalami kesulitan pada saat mengakses fitur pengelolaan.                                                                                                               |    |   |    | ✅ |     |
+|     |                                                                                    | Tidak semua elemen dalam dashboard admin dapat diakses dengan mudah terutama pada situasi adanya keterbatasan perangkat.                                                 |    | ✅ |    |    |     |
+|     |                                                                                    | Tidak ada pemberitahuan konfirmasi atau validasi admin seperti menghapus atau mengedit data sehingga meningkatkan risiko kesalahan manipulasi data tanpa disadari.       |    | ✅ |    |    |     |
+|-----|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|---|----|----|-----|
+|     |                               Spesifik                                             | Saat admin menginput layanan ekspedisi baru, tidak ada highlight pada field yang wajib diisi, menyebabkan sering terlewat saat menyimpan data.                           |    | ✅ |    |    |     |
+|     |                                                                                    | Beberapa tombol aksi tidak dilengkapi dengan label atau petunjuk yang jelas, menyulitkan admin dalam memahami fungsinya terutama saat bekerja dengan volume data tinggi. | ✅ |   |    |    |     |
+|     |                                                                                    | Sistem tidak memberikan indikator visual atau suara setelah proses input berhasil atau gagal, membuat admin harus memeriksa ulang secara manual, yang memakan waktu.     |    | ✅ |    |    |     |
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+---
