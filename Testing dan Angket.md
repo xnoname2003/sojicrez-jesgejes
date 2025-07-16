@@ -21,9 +21,9 @@
 ---
 ## A. **Dokumentasi Testing Admin**
 
-<img width="1366" height="768" alt="Dokumentasi Testing Admin" src="https://github.com/user-attachments/assets/92eb34ea-2c75-431f-ab85-b3d3014c3d15" />
+![Testing Admin](https://github.com/user-attachments/assets/611ad17c-2de8-4ba0-bb6c-ebb09e44ed00)
 
-<img width="1366" height="768" alt="Testing Bersama Bang Isal" src="https://github.com/user-attachments/assets/6ec596d5-6410-4f68-8331-127e5552c8d4" />
+![Testing Bersama Bang Isal](https://github.com/user-attachments/assets/409f305a-0ac6-4818-92cc-f26a28297eb6)
 
 ---
 ## B. **Dokumentasi Testing Pelanggan**
