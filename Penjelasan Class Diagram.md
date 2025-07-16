@@ -48,6 +48,7 @@ Digunakan untuk komunikasi terkait komplain antara pelanggan dan admin. Atribut 
 Mewakili penyedia layanan pengiriman seperti JNE atau J&T. Mencakup atribut EkspedisiID, NamaLayanan, KodeEkspedisi, dan CreatedAt. Fungsinya seperti PilihEkspedisi() dan GetOngkosKirim().
 
 11. **Class Laporan**
+
 Digunakan oleh admin untuk menyusun laporan penjualan. Memiliki atribut ReportID, nama_produk, TanggalPembayaran, TanggalUlasan, dan TotalHarga. Laporan dapat diekspor melalui method ExportToPDF() dan ExportToExcel().
 
 ---
