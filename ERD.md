@@ -1,5 +1,16 @@
 ---
 ## Entity Relationship Diagram Sistem Penjualan Kripik Isal
+
+Entity Relationship Diagram (ERD) ini menggambarkan struktur database sistem penjualan yang terintegrasi mulai dari pengguna, produk, transaksi, pengiriman, hingga komplain dan chat.
+1. User (tabel Trx_User) adalah entitas inti yang memiliki relasi ke Pelanggan, Admin, dan Role.
+2. Pelanggan (Ms_Pelanggan) dan Admin (Ms_Admin) adalah turunan dari User, masing-masing menyimpan detail tambahan seperti nama dan kontak. 
+3. Alamat pelanggan disusun hierarkis dari Provinsi, Kota, Kecamatan, hingga Kelurahan, dan semuanya dihubungkan ke tabel Trx_Alamat.
+4. Produk (Ms_Produk) berelasi dengan Trx_Foto_Produk dan Trx_Keranjang, serta dicatat dalam proses checkout.
+5. Checkout (Trx_Checkout) mencatat semua transaksi, termasuk item produk, jumlah, harga, serta status pesanan.
+6. Pembayaran (Trx_Payment) dan metode ekspedisi (Trx_Layanan_Ekspedisi, Ms_Ekspedisi) dihubungkan ke checkout untuk proses pengiriman dan pelacakan.
+7. Chat antara pelanggan dan admin tercatat di Trx_Komplain_Chat, yang berhubungan dengan Trx_Komplain (aduan/pengaduan).
+8. Transaksi seperti keranjang, pembayaran, dan ekspedisi selalu terkait dengan Trx_User sebagai pihak yang melakukan aksi dan updated_by sebagai pelacak modifikasi data.
+
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/33a52cb6-a2f0-4d90-906f-8d1606907f85" />
 
 ---
