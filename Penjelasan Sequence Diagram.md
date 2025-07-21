@@ -55,7 +55,7 @@ Sequence diagram Buat Pesanan menggambarkan alur saat pelanggan menyelesaikan pe
 
 7. **Upload Bukti Pembayaran**
 
-Pelanggan yang telah melakukan pembayaran akan mengunggah foto bukti transfer ke sistem. Sistem akan menyimpan bukti ini dan mengaitkannya dengan PesananID terkait. Setelah bukti diterima, sistem akan memberi notifikasi kepada admin bahwa ada pembayaran yang harus diverifikasi. Tahapan ini memastikan adanya jejak digital atar transaksi keuangan dan menjadi dasar proses verifikasi di pihak admin.
+Pelanggan yang telah melakukan pembayaran akan mengunggah foto bukti transfer ke sistem. Sistem akan menyimpan bukti ini dan mengaitkannya dengan PesananID terkait. Setelah bukti diterima, sistem akan memberi notifikasi kepada admin bahwa ada pembayaran yang harus diverifikasi. Tahapan ini memastikan adanya jejak digital antar transaksi keuangan dan menjadi dasar proses verifikasi di pihak admin.
 
 <img width="895" height="401" alt="UploadBuktiPembayaran drawio" src="https://github.com/user-attachments/assets/f0bdd971-87cc-4ebf-94dc-8de14082b848" />
 
