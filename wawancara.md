@@ -15,6 +15,10 @@
 - **Metode Wawancara:** Tatap Muka 
 
 ---
+## Proses Bisnis
+Usaha Kripik Isal merupakan bisnis rumahan yang bergerak dalam produksi dan penjualan berbagai jenis keripik dengan ciri khas bumbu balado basah dan cokelat bubuk. Usaha ini didirikan oleh Bang Isal pada tahun 2014 dengan tujuan awal membiayai pendidikan dan kini berkembang menjadi sumber penghasilan utama keluarga. Produk utama yang dijual meliputi keripik singkong, pisang, dan kentang dengan total enam varian rasa: asin, balado basah, cokelat, dan pedas. Varian singkong balado dan pisang cokelat menjadi favorit pelanggan. Kemasan disesuaikan dengan ukuran (50g-500g) dan desain label berbeda untuk tiap rasa. Proses produksi dilakukan secara internal dengan melibatkan keluarga dan warga sekitar tanpa tenaga kerja formal. Alur produksi dimulai dari pembelian bahan baku, pengelolaan (pengupasan dan penggorengan), hingga pengemasan dan pelabelan menggunakan mesin press. Penjualan dilakukan melalui dua jalur: offline langsung dari rumah dan online lewat Instagram serta WhatsApp. Pencatatan penjualan dan stok masih dilakukan secara manual. Untuk legalitas, usaha telah memiliki PIRT dan label halal, serta dalam proses pendaftaran ke BPOM. Strategi promosi mengandalkan testimoni dari komunitas lokal dan distribusi sampel gratis. Pengendalian biaya dilakukan dengan pembelian bahan baku dalam jumlah besar saat harga turun. Jika ada keluhan pelanggan, solusi langsung diberikan berupa penggantian produk. 
+
+---
 ## Pertanyaan Terbuka
 ## A. **What**
 
